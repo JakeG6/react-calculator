@@ -1,0 +1,110 @@
+@font-face {
+  font-family: Digital-7;
+  src: url(../src/digital-7.ttf);
+}
+
+
+
+.blue-suede {
+  background-color: #8795E8;
+}
+
+.pink-punk {
+  background-color: #FF6AD5 ;
+}
+
+.rich-purple {
+  background-color: #C774E8;
+}
+
+.portfolio-bar {
+  height: 88px;
+  width: 100%;
+  background-color: orange;
+  display: flex;
+  align-items: center;
+}
+
+.fa {
+  color:white;
+  text-decoration: none;
+  margin-left: 1em;
+}
+
+.fa:hover {
+  color: black;
+}
+
+.calculator-body {
+  margin: 5em auto;
+  height: 400px;
+  width: 300px;
+  padding-top: 1px;
+  -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+  background-color: pink;
+}
+
+.calculator-display {
+  width: 275px;
+  height: 50px;
+  margin: .5em auto .5em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: grey;
+  border-radius: 25px;
+  -webkit-box-shadow: inset 10px 10px 5px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 10px 10px 5px -8px rgba(0,0,0,0.75);
+  box-shadow: inset 10px 10px 5px -8px rgba(0,0,0,0.75);
+
+  font-family: "Digital-7";
+  font-size: 34px;
+  letter-spacing: 3px;
+}
+
+.calculator-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 1em auto;
+  width: 275px;
+  border-radius: 5%;
+
+  -webkit-box-shadow: inset 10px 10px 5px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 10px 10px 5px -8px rgba(0,0,0,0.75);
+  box-shadow: inset 10px 10px 5px -8px rgba(0,0,0,0.75);
+}
+
+.button {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 50px;
+  height: 50px;
+  /*border: 2px solid white;*/
+  border-radius: 25%;
+  margin: 10px 5px;
+  -moz-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+    box-shadow: inset 2px 2px 2px rgba(255, 255, 255, .4), inset -2px -2px 2px rgba(0, 0, 0, .4);
+
+  font-size: 2em;
+}
+
+.button:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.button:active {
+  -webkit-box-shadow: inset 2px 2px 1px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 2px 2px 1px -2px rgba(0,0,0,0.75);
+  box-shadow: inset 2px 2px 1px -2px rgba(0,0,0,0.75);
+
+}
