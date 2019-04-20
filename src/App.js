@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 
 class App extends Component {
@@ -37,8 +37,6 @@ class App extends Component {
     		this.setState( {calculatorDisplay: this.state.calculatorDisplay + x.toString() } );
     	}
     }
-
-
 
   }
 
@@ -107,7 +105,7 @@ class App extends Component {
       <div className="App">
         <div className="portfolio-bar">
           <div className="arrow-container">
-            <a href="#" className="fa fa-long-arrow-left fa-5x"></a>
+            <a href="https://jake-guss.herokuapp.com/portfolio" className="fa fa-long-arrow-left fa-5x"></a>
           </div>
         </div>
 
