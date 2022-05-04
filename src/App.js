@@ -105,7 +105,7 @@ class App extends Component {
       <div className="App">
         <div className="portfolio-bar">
           <div className="arrow-container">
-            <a href="https://jake-guss.herokuapp.com/portfolio" className="fa fa-long-arrow-left fa-5x"></a>
+            <a href="https://jake-guss.herokuapp.com/" className="fa fa-long-arrow-left fa-5x"></a>
           </div>
         </div>
 
