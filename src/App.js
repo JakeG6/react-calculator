@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import './App.css';
 
 class App extends Component {
@@ -10,7 +9,6 @@ class App extends Component {
       operand: 0,
       operator: '',
       newNumber: true
-
     };
 
     this.toDisplay = this.toDisplay.bind(this);
@@ -18,13 +16,9 @@ class App extends Component {
     this.setOperator = this.setOperator.bind(this);
     this.operate = this.operate.bind(this);
     this.equals = this.equals.bind(this);
-    // this.operate = this.operate.bind(this);
   }
 
-
-
   toDisplay(x) {
-
     if (this.state.calculatorDisplay.length == 13) {
       return;
     }
@@ -37,29 +31,18 @@ class App extends Component {
     		this.setState( {calculatorDisplay: this.state.calculatorDisplay + x.toString() } );
     	}
     }
-
   }
 
-
   setOperator(x) {
-
     this.operate();
-
-      // this.setState( {calculatorDisplay: 0} );
-
-      this.setState( {operator: x} );
-
-      this.setState( {newNumber: true} );
-
-      //
-      // this.setState( {operand: this.state.operand + this.state.calculatorDisplay} );
+    this.setState( {operator: x} );
+    this.setState( {newNumber: true} );
   }
 
   operate() {
     if ( this.state.operator === '' ) {
       this.setState({newNumber: true});
-      this.setState( {operand: parseInt(this.state.calculatorDisplay)} );
-
+      this.setState({operand: parseInt(this.state.calculatorDisplay)});
       return;
     }
 
@@ -103,40 +86,25 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="portfolio-bar">
-          <div className="arrow-container">
-            <a href="https://jake-guss.herokuapp.com/" className="fa fa-long-arrow-left fa-5x"></a>
-          </div>
-        </div>
-
         <div className="calculator-body">
           <p className="calculator-display">{this.state.calculatorDisplay}</p>
           <div className="calculator-buttons blue-suede">
-
-              <div className="button pink-punk" onClick={() => this.toDisplay(7)}>7</div>
-              <div className="button pink-punk" onClick={() => this.toDisplay(8)}>8</div>
-              <div className="button pink-punk" onClick={() => this.toDisplay(9)}>9</div>
-
-              <div className="button rich-purple" onClick={() => this.setOperator('+')}>+</div>
-
-              <div className="button pink-punk" onClick={() => this.toDisplay(4)}>4</div>
-              <div className="button pink-punk" onClick={() => this.toDisplay(5)}>5</div>
-              <div className="button pink-punk" onClick={() => this.toDisplay(6)}>6</div>
-
-              <div className="button rich-purple" onClick={() => this.setOperator('-')}>-</div>
-
-              <div className="button pink-punk" onClick={() => this.toDisplay(1)}>1</div>
-              <div className="button pink-punk" onClick={() => this.toDisplay(2)}>2</div>
-              <div className="button pink-punk" onClick={() => this.toDisplay(3)}>3</div>
-
-              <div className="button rich-purple" onClick={() => this.setOperator('*')}>X</div>
-
-              <div className="button pink-punk" onClick={() => this.toDisplay(0)}>0</div>
-              <div className="button rich-purple" onClick={ () => this.equals() }>=</div>
-              <div className="button rich-purple" onClick={() => this.clearDisplay()}>C</div>
-
-              <div className="button rich-purple" onClick={() => this.setOperator('/')}>/</div>
-
+            <div className="button pink-punk" onClick={() => this.toDisplay(7)}>7</div>
+            <div className="button pink-punk" onClick={() => this.toDisplay(8)}>8</div>
+            <div className="button pink-punk" onClick={() => this.toDisplay(9)}>9</div>
+            <div className="button rich-purple" onClick={() => this.setOperator('+')}>+</div>
+            <div className="button pink-punk" onClick={() => this.toDisplay(4)}>4</div>
+            <div className="button pink-punk" onClick={() => this.toDisplay(5)}>5</div>
+            <div className="button pink-punk" onClick={() => this.toDisplay(6)}>6</div>
+            <div className="button rich-purple" onClick={() => this.setOperator('-')}>-</div>
+            <div className="button pink-punk" onClick={() => this.toDisplay(1)}>1</div>
+            <div className="button pink-punk" onClick={() => this.toDisplay(2)}>2</div>
+            <div className="button pink-punk" onClick={() => this.toDisplay(3)}>3</div>
+            <div className="button rich-purple" onClick={() => this.setOperator('*')}>X</div>
+            <div className="button pink-punk" onClick={() => this.toDisplay(0)}>0</div>
+            <div className="button rich-purple" onClick={ () => this.equals() }>=</div>
+            <div className="button rich-purple" onClick={() => this.clearDisplay()}>C</div>
+            <div className="button rich-purple" onClick={() => this.setOperator('/')}>/</div>
           </div>
         </div>
       </div>
